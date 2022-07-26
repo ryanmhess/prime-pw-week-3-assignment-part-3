@@ -50,7 +50,7 @@ for(i=0; i<supplyChanges.length; i++){
         console.log('No changes.');
     }   
     else if(supplyChanges[i] < 0){
-        console.log('Removed', supplyChanges[i], 'parts.');
+        console.log('Removed', -supplyChanges[i], 'parts.');
     }
 }
 
@@ -67,7 +67,7 @@ for(transactions of supplyChanges){
         console.log('No changes.');
     }   
     else if(transactions < 0){
-        console.log('Removed', transactions, 'parts.');
+        console.log('Removed', -transactions, 'parts.');
     }
 }
 
