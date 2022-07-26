@@ -89,3 +89,13 @@ console.log('The total parts available after all current transactions:', totalPa
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('\n9. Filling boxes with a "while" loop');
 
+let stashParts = 572;
+let stashBox = 0;
+
+while(stashParts > 7){
+    stashBox ++;
+    stashParts -= 7;
+}
+
+console.log('The current inventory was organized into', stashBox, 'boxes.');
+console.log('There were', stashParts, 'extra parts set aside as spares.');
