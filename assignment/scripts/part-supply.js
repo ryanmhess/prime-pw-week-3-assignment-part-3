@@ -42,7 +42,17 @@ console.log('Updated supply changes:', supplyChanges);
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('\n6. Showing supplyChanges...');
 
-
+for(i=0; i<=supplyChanges.length; i++){
+    if(supplyChanges[i] > 0){
+        console.log('Added', supplyChanges[i], 'parts.');
+    }   
+    else if(supplyChanges[i] === 0){
+        console.log('No changes.');
+    }   
+    else if(supplyChanges[i] < 0){
+        console.log('Removed', supplyChanges[i], 'parts.');
+    }
+}
 
 // STRETCH GOALS
 console.log('\n---  Stretch Goals  ---');
